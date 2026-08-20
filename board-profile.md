@@ -78,7 +78,7 @@ datasheet, which mislabels the touch chip). GPIO numbers are the ESP32-S3 IO num
 | Boot button | 0 |
 | Battery ADC | 8 |
 
-## Simulation reality check
+## Simulation currently
 
 - **Simulatable now:** the ESP32-S3 CPU + generic GPIO/SPI/I²C (real firmware runs in QEMU).
 - **Maybe:** ST7789 via a generic TFT component wired to the LCD pins above.

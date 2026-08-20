@@ -1,10 +1,10 @@
-# How to add an ESP32 board to Velxio
+# How to add an ESP32 board on Velxio
 
 A reusable recipe for adding a new ESP32-family board to
 [Velxio](https://github.com/davidmonterocrespo24/velxio). Verified by actually doing it
 against a real checkout (fetched 2026-08). Line numbers drift; search for the symbols.
 
-## The one insight that makes this easy
+## Something that makes adding a board easy
 
 **The QEMU backend only knows chip *families*, not board variants.** In
 `backend/app/services/esp_qemu_manager.py`:
@@ -84,7 +84,7 @@ See [`testing-checklist.md`](testing-checklist.md) for the full checklist. Short
   <https://velxio.dev/license/signup> (the OSS Docker build gates the QEMU `.so` binaries).
   Then `docker compose build --build-arg VELXIO_LICENSE_KEY=vlx_personal_... && docker compose up -d`, open <http://localhost:3080>.
 
-## What you canNOT get this way
+## What you CANNOT get this way
 
 Adding a board does not simulate the chips soldered to it. A display may work via a
 generic TFT component; anything exotic (unusual touch controllers, IMUs, RTCs, codecs)

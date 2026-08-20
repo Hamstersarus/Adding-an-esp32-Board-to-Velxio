@@ -11,7 +11,7 @@ Two levels of testing, because Velxio splits into a frontend (board UI) and a ba
 | **Docker + `docker compose` v2** | Full sim (Level 2) | `sudo apt install docker-compose-v2` if `docker compose version` fails |
 | **A free Velxio license key** | Full sim (Level 2) | Sign up at <https://velxio.dev/license/signup>. Gates the QEMU `.so` download. Without it the Docker build fails at the `qemu-provider` step. |
 
-## Level 1: Frontend appearance (no account, no key)
+## Level 1: Frontend appearance
 
 Confirms the board is correctly *defined*: appears in the picker, right label/description/
 visual, right default options, right pinout labels.
