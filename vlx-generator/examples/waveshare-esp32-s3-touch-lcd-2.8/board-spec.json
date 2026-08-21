@@ -1,0 +1,19 @@
+{
+  "name": "Waveshare ESP32-S3 Touch LCD 2.8",
+  "boardKind": "esp32-s3",
+  "firmware": "sketch.ino",
+  "libraries": ["Adafruit ILI9341", "Adafruit GFX Library", "Adafruit BusIO"],
+  "interfaces": [
+    { "id": "tft1", "part": "ili9341" }
+  ],
+  "pinout": [
+    { "gpio": "45",    "to": "tft1:MOSI", "color": "#ff8800" },
+    { "gpio": "40",    "to": "tft1:SCK",  "color": "#ff8800" },
+    { "gpio": "42",    "to": "tft1:CS",   "color": "#00aaff" },
+    { "gpio": "41",    "to": "tft1:D/C",  "color": "#00cc00" },
+    { "gpio": "39",    "to": "tft1:RST",  "color": "#cc0000" },
+    { "gpio": "5",     "to": "tft1:LED",  "color": "#ffffff" },
+    { "gpio": "3V3.1", "to": "tft1:VCC",  "color": "#ff0000" },
+    { "gpio": "GND.1", "to": "tft1:GND",  "color": "#000000" }
+  ]
+}
