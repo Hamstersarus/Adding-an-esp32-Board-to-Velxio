@@ -22,7 +22,7 @@ a visual, its options, and its compile target (FQBN). You never touch QEMU or th
 
 ## REQUIRED edits (board appears + correct identity/options/visual)
 
-These are the edits our `draft-pr/patch_velxio.py` applies automatically. All under
+These are the edits our `velxio-patch/patch_velxio.py` applies automatically. All under
 `frontend/src/`. Chosen id: `waveshare-esp32-s3-touch-lcd-2.8`.
 
 | File | Symbol | Add |
@@ -68,7 +68,7 @@ not route all of these through `ESP32_S3_KINDS`, so the set alone is not enough 
 ## Automated patch
 
 ```bash
-python3 draft-pr/patch_velxio.py /path/to/velxio     # applies the REQUIRED edits
+python3 velxio-patch/patch_velxio.py /path/to/velxio     # applies the REQUIRED edits
 ```
 It self-reports each insertion and prints `MISS` if an anchor moved. Run once on a clean
 checkout (`git checkout -- .` to reset).

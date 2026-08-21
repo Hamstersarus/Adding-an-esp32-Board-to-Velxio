@@ -12,7 +12,7 @@ Hardware-verified profile used to build the Velxio board definition.
 | Velxio family / QEMU | `esp32-s3` → `qemu-system-xtensa -M esp32s3` |
 | Arduino FQBN (generic) | `esp32:esp32:esp32s3` |
 
-## Velxio board options (see draft-pr/CHANGES.md → `getDefaultOptionsForKind`)
+## Velxio board options (see velxio-patch/CHANGES.md → `getDefaultOptionsForKind`)
 
 ```
 flashSize: '16MB'

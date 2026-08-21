@@ -11,9 +11,9 @@ ESP32 simulator, plus a **reusable guide** for adding *any* ESP32 board to Velxi
 | [`docs/adding-an-esp32-board-to-velxio.md`](docs/adding-an-esp32-board-to-velxio.md) | **The reusable guide.** Add any ESP32 board to Velxio. Start here for future boards. |
 | [`docs/testing-checklist.md`](docs/testing-checklist.md) | **What you need to fully test it yourself** (Level 1 frontend + Level 2 compile/boot). |
 | [`board-profile.md`](board-profile.md) | This board's specs + fully verified pinout + Velxio settings. |
-| [`draft-pr/patch_velxio.py`](draft-pr/patch_velxio.py) | Script that applies the board edits to a Velxio checkout. |
-| [`draft-pr/CHANGES.md`](draft-pr/CHANGES.md) | The exact edits, spelled out, for hand-application or review. |
-| [`draft-pr/pin-map.ts`](draft-pr/pin-map.ts) | Pin-map snippet (label -> GPIO). |
+| [`velxio-patch/patch_velxio.py`](velxio-patch/patch_velxio.py) | Script that applies the board edits to a Velxio checkout. |
+| [`velxio-patch/CHANGES.md`](velxio-patch/CHANGES.md) | The exact edits, spelled out, for hand-application or review. |
+| [`velxio-patch/pin-map.ts`](velxio-patch/pin-map.ts) | Pin-map snippet (label -> GPIO). |
 
 ## Reproduce it yourself, start to finish
 
@@ -21,7 +21,7 @@ ESP32 simulator, plus a **reusable guide** for adding *any* ESP32 board to Velxi
 # 1. get Velxio
 git clone https://github.com/davidmonterocrespo24/velxio && cd velxio
 # 2. apply the board
-python3 /path/to/this-repo/draft-pr/patch_velxio.py "$PWD"
+python3 /path/to/this-repo/velxio-patch/patch_velxio.py "$PWD"
 # 3a. Level 1: see it in the picker (no account)
 cd frontend && npm install && ./node_modules/.bin/vite --host   # -> localhost:5173
 # 3b. Level 2: compile + boot it (needs a free key from velxio.dev/license/signup)
