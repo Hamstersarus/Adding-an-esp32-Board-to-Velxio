@@ -1,0 +1,9 @@
+{
+  "schema": "velxio-chip/v1",
+  "name": "EEPROM @ 0x78",
+  "author": "Ayla Vaynerman",
+  "license": "MIT",
+  "description": "Tiny 128-byte I2C EEPROM at the fixed address 0x78. A custom peripheral that is NOT on the real board and does not exist on any standard part (24Cxx EEPROMs live at 0x50-0x57), so an I2C scan finding 0x78 proves it was added by hand.",
+  "pins": ["SCL", "SDA", "VCC", "GND"],
+  "attributes": []
+}
